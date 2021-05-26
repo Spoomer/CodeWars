@@ -11,8 +11,11 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
-            var result = ExpandNumbers.ExpandedForm(7523);
-
+            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(12));
+            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(513));
+            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(2017));
+            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(414));
+            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(144));
         }
         
     }
