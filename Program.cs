@@ -11,11 +11,11 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(12));
-            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(513));
-            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(2017));
-            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(414));
-            Console.WriteLine(NextBiggerNumber.GetNextBiggerNumber(144));
+            Console.WriteLine("21 = "+NextBiggerNumber.GetNextBiggerNumber(12));
+            Console.WriteLine("531 = "+ NextBiggerNumber.GetNextBiggerNumber(513));
+            Console.WriteLine("2071 = "+NextBiggerNumber.GetNextBiggerNumber(2017));
+            Console.WriteLine("441 = "+NextBiggerNumber.GetNextBiggerNumber(414));
+            Console.WriteLine("414 = "+NextBiggerNumber.GetNextBiggerNumber(144));
         }
         
     }

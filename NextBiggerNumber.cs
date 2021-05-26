@@ -9,20 +9,17 @@ namespace CodeWars
         {
             long result = -1L;
             string longNumString = n.ToString();
-            long highestNumber = long.Parse(string.Concat(longNumString.OrderByDescending(x => x)));
+            string highestNumberString = string.Concat(longNumString.OrderByDescending(x => x));
+            long highestNumber = long.Parse(highestNumberString);
             if (n != highestNumber)
             {
-                for (int i = longNumString.Length - 1, j = 2; i > 0; i -= 2, j++)
+                for (var i = n+1; i <= highestNumber; i++)
                 {
-                    string newLongNumString = longNumString.Substring(0, longNumString.Length - j)
-                                            + string.Concat(longNumString.Substring(i - 1, j).OrderByDescending(x => x));
-
-                    if (long.Parse(newLongNumString) > n)
+                    if (highestNumberString == string.Concat(i.ToString().OrderByDescending(x=>x)))
                     {
-                        result = long.Parse(newLongNumString);
+                        result = i;
                         break;
                     }
-                    
                 }
             }
             return result;
